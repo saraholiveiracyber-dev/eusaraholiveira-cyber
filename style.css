@@ -3131,3 +3131,547 @@ summary:focus-visible {
 .created-by strong:hover {
     color: #ffffff;
 }
+
+/* =========================================================
+   AGENDA ESPECIAL — PALESTRA
+   CASA, CAFÉ & CONTEÚDO
+   ESTILO PREMIUM / CENTRALIZADO
+========================================================= */
+
+.agenda-palestra {
+    width: min(100% - 32px, 680px);
+
+    margin: 45px auto;
+
+    padding: 38px 42px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    border: 1px solid rgba(90, 53, 37, 0.12);
+
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff 0%,
+            #fffaf4 55%,
+            #f8f1e8 100%
+        );
+
+    box-shadow:
+        0 18px 45px rgba(58, 33, 24, 0.08),
+        0 3px 12px rgba(58, 33, 24, 0.04);
+
+    overflow: hidden;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+
+/* =========================================================
+   DETALHE SUPERIOR
+========================================================= */
+
+.agenda-palestra::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    width: 110px;
+    height: 3px;
+
+    transform: translateX(-50%);
+
+    border-radius: 0 0 10px 10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #c99552,
+            #e5bd82
+        );
+}
+
+
+/* brilho decorativo */
+
+.agenda-palestra::after {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    right: -120px;
+    top: -120px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(201,149,82,.13),
+            transparent 70%
+        );
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   SELO
+========================================================= */
+
+.agenda-data {
+    position: relative;
+    z-index: 2;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-bottom: 18px;
+
+    padding: 8px 16px;
+
+    border: 1px solid rgba(201,149,82,.25);
+
+    border-radius: 100px;
+
+    background:
+        rgba(201,149,82,.07);
+
+    color: #5a3525;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   ÍCONE
+========================================================= */
+
+.agenda-icone {
+    color: #c99552;
+
+    font-size: 13px;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.agenda-label {
+    position: relative;
+    z-index: 2;
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #c99552;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 2.5px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   TÍTULO
+========================================================= */
+
+.agenda-conteudo {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+}
+
+
+.agenda-conteudo h3 {
+    max-width: 560px;
+
+    margin: 0 auto;
+
+    color: #3a2118;
+
+    font-family: "DM Serif Display", serif;
+
+    font-size: clamp(
+        1.7rem,
+        4vw,
+        2.35rem
+    );
+
+    font-weight: 400;
+
+    line-height: 1.18;
+
+    letter-spacing: -.02em;
+}
+
+
+.agenda-conteudo h3 strong {
+    color: #5a3525;
+
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   LOCAL
+========================================================= */
+
+.agenda-local {
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    max-width: 520px;
+
+    margin: 15px auto 26px;
+
+    color: #8b6049;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    line-height: 1.5;
+}
+
+
+.agenda-local span {
+    color: #c99552;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   BOTÃO PRINCIPAL
+========================================================= */
+
+.agenda-botao {
+    position: relative;
+
+    z-index: 2;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+
+    min-width: 260px;
+
+    min-height: 52px;
+
+    padding: 0 25px;
+
+    border: 1px solid #5a3525;
+
+    border-radius: 100px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #5a3525 0%,
+            #3a2118 100%
+        );
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.3px;
+
+    text-transform: uppercase;
+
+    box-shadow:
+        0 12px 28px rgba(58,33,24,.18);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+}
+
+
+/* seta */
+
+.agenda-botao strong {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #e5bd82;
+
+    font-size: 18px;
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    transition:
+        transform .3s ease,
+        color .3s ease;
+}
+
+
+/* hover */
+
+.agenda-botao:hover {
+
+    background:
+        linear-gradient(
+            135deg,
+            #c99552 0%,
+            #e5bd82 100%
+        );
+
+    color: #3a2118;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 18px 38px rgba(58,33,24,.22);
+}
+
+
+.agenda-botao:hover strong {
+
+    color: #3a2118;
+
+    transform: translateX(5px);
+}
+
+
+/* =========================================================
+   MICRO TEXTO
+========================================================= */
+
+.agenda-palestra::marker {
+    display: none;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .agenda-palestra {
+
+        width: min(
+            calc(100% - 32px),
+            620px
+        );
+
+        padding: 34px 28px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .agenda-palestra {
+
+        width: calc(100% - 24px);
+
+        margin: 30px auto;
+
+        padding: 30px 20px;
+
+        border-radius: 20px;
+    }
+
+
+    .agenda-palestra::before {
+
+        width: 80px;
+    }
+
+
+    .agenda-data {
+
+        margin-bottom: 15px;
+
+        padding: 7px 13px;
+
+        font-size: 8px;
+
+        letter-spacing: 1.5px;
+    }
+
+
+    .agenda-label {
+
+        font-size: 8px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .agenda-conteudo h3 {
+
+        font-size: 1.5rem;
+
+        line-height: 1.2;
+    }
+
+
+    .agenda-local {
+
+        max-width: 300px;
+
+        margin: 13px auto 23px;
+
+        font-size: 10px;
+
+        line-height: 1.5;
+    }
+
+
+    .agenda-botao {
+
+        width: 100%;
+
+        min-width: 0;
+
+        min-height: 52px;
+
+        padding: 0 18px;
+
+        font-size: 9px;
+
+        letter-spacing: 1px;
+    }
+
+
+    .agenda-botao strong {
+
+        font-size: 17px;
+    }
+
+}
+
+
+/* =========================================================
+   CELULAR PEQUENO
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .agenda-palestra {
+
+        padding: 27px 16px;
+    }
+
+
+    .agenda-conteudo h3 {
+
+        font-size: 1.35rem;
+    }
+
+
+    .agenda-local {
+
+        font-size: 9px;
+    }
+
+
+    .agenda-botao {
+
+        font-size: 8px;
+
+        gap: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   ACESSIBILIDADE
+========================================================= */
+
+.agenda-botao:focus-visible {
+
+    outline: 3px solid #e5bd82;
+
+    outline-offset: 4px;
+}
+
+
+/* =========================================================
+   REDUÇÃO DE MOVIMENTO
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .agenda-palestra,
+    .agenda-botao,
+    .agenda-botao strong {
+
+        transition: none;
+    }
+}
